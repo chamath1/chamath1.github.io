@@ -8,8 +8,7 @@ var whichIsEmpty = function(datas){
     }
   }
   return -1;
-}
-
+};
 var reset = function(){
 
   var inputs = $($("tr[name='textboard']")[0]).find("input");
