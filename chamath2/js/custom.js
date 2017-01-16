@@ -170,7 +170,7 @@ var findText = function(selectName, value){
 
 var addRow = function(key, rowData){
 	var tbody = document.getElementsByName('mainTable')[0].getElementsByTagName('tbody')[0];
-  var row = tbody.insertRow(tbody.rows.length);
+  var row = tbody.insertRow(0);
   row.id = key;
   row.insertCell(0).innerHTML = makeTd("checkBox", "", "<input type='checkbox' name='"+key+"'/>");
   row.insertCell(1).innerHTML = makeTd("campus", rowData.campus, rowData.campus);
